@@ -2,6 +2,14 @@
     <div class="tsd-page-toolbar">
         <div class="container">
             <div class="table-wrap">
+                <div class="topMenu">
+                    <a href="{{relativeURL "index.html"}}" class="title">{{project.name}}</a>
+                    <div class="links">
+                        {{#each settings.links}}
+                        &emsp;<a href="{{url}}" class="title">{{label}}</a>
+                        {{/each}}
+                    </div>
+                </div>
                 <div class="table-cell" id="tsd-search" data-index="{{relativeURL "assets/js/search.json"}}"
                     data-base="{{relativeURL "./"}}">
                     <div class="field">
@@ -18,14 +26,6 @@
                         <li data-name="{{name}}" data-subtitle="{{subtitle}}"></li>
                         {{/each}}
                     </ul>
-                    <div class="topMenu">
-                        <a href="{{relativeURL "index.html"}}" class="title">{{project.name}}</a>
-                        <div class="links">
-                            {{#each settings.links}}
-                            &emsp;<a href="{{url}}" class="title">{{label}}</a>
-                            {{/each}}
-                        </div>
-                    </div>
                 </div>
 
                 <div class="table-cell" id="tsd-widgets">
